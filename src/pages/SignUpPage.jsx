@@ -23,7 +23,7 @@ const SignUpPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/user/signup', formData);
+      const response = await axios.post('https://totality-backend.vercel.app/user/signup', formData);
       setMessage(response.data.message);
     } catch (error) {
       setMessage(error.response?.data?.message || 'Something went wrong!');

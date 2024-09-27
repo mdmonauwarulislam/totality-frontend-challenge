@@ -14,7 +14,7 @@ const LoginPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/user/login', { email, password });
+      const response = await axios.post('https://totality-backend.vercel.app/user/login', { email, password });
 
       if (response.data.success) {
         // Store token in localStorage
