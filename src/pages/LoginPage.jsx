@@ -74,9 +74,8 @@ const LoginPage = () => {
         </form>
         <p className="text-center mt-4">
           Don't have an account?{' '}
-          <a href="/signup" className="text-blue-500 hover:underline">
-            Sign Up
-          </a>
+        
+          <Link to = "/signup" className="text-blue-500 hover:underline">Sign Up </Link>
         </p>
       </motion.div>
     </div>
