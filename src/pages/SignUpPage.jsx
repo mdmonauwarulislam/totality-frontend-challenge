@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -89,9 +90,10 @@ const SignUpPage = () => {
         {message && <p className="text-center mt-4 text-red-500">{message}</p>}
         <p className="text-center mt-4">
           Already have an account?{' '}
-          <a href="/login" className="text-blue-500 hover:underline">
+          <Link to="/login" className="text-blue-500 hover:underline">
             Login
-          </a>
+          </Link>
+          
         </p>
       </motion.div>
     </div>
